@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Application</h1>
+        <% if (user) { %>
+            <p>Hello, <%= user.username %>!</p>
+            <a href="/dashboard" class="btn">Go to Dashboard</a>
+            <a href="/logout" class="btn">Logout</a>
+        <% } else { %>
+            <a href="/login" class="btn">Login</a>
+            <a href="/register" class="btn">Register</a>
+        <% } %>
+    </div>
+</body>
+</html>

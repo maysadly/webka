@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, <%= user.username %>!</h1>
+        <div class="profile-section">
+            <% if (user.profilePicture) { %>
+                <img src="<%= user.profilePicture %>" alt="Profile Picture" class="profile-pic">
+            <% } %>
+            <p>Email: <%= user.email %></p>
+            <p>Role: <%= user.role %></p>
+        </div>
+        <div class="actions">
+            <a href="/profile/edit" class="btn">Edit Profile</a>
+            <a href="/logout" class="btn">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
