@@ -1,0 +1,30 @@
+{
+  "name": "webka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maysadly/webka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maysadly/webka/issues"
+  },
+  "homepage": "https://github.com/maysadly/webka#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.0",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.10.0",
+    "path": "^0.12.7"
+  }
+}
